@@ -7,6 +7,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <modules>
         <module>microservicecloud-api</module>
+        <module>microservicecloud-provider-dept-8001</module>
     </modules>
     <packaging>pom</packaging>
 

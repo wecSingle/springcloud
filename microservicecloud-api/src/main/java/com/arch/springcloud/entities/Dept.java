@@ -13,6 +13,12 @@ public class Dept implements Serializable {
         this.dname = dname;
     }
 
+    public Dept(Long deptno, String dname, String db_source) {
+        this.deptno = deptno;
+        this.dname = dname;
+        this.db_source = db_source;
+    }
+
     public Long getDeptno() {
         return deptno;
     }

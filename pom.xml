@@ -2,13 +2,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.arch.springcloud</groupId>
+    <groupId>com.atguigu.springcloud</groupId>
     <artifactId>microservicecloud</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <modules>
-        <module>microservicecloud-api</module>
-        <module>microservicecloud-provider-dept-8001</module>
-    </modules>
     <packaging>pom</packaging>
 
 
@@ -70,5 +66,39 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <build>
+        <finalName>microservicecloud</finalName>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <configuration>
+                    <delimiters>
+                        <delimit>$</delimit>
+                    </delimiters>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+    <modules>
+        <module>microservicecloud-api</module>
+        <module>microservicecloud-provider-dept-8001</module>
+        <module>microservicecloud-consumer-dept-80</module>
+        <module>microservicecloud-eureka-7001</module>
+        <module>microservicecloud-eureka-7002</module>
+        <module>microservicecloud-eureka-7003</module>
+        <module>microservicecloud-provider-dept-8002</module>
+        <module>microservicecloud-consumer-dept-feign</module>
+    </modules>
+
 </project>
 

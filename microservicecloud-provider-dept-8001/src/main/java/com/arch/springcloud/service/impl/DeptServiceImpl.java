@@ -1,4 +1,4 @@
-package com.arch.springcloud.service.com.arch.springcloud.service.impl;
+package com.arch.springcloud.service.impl;
 
 import com.arch.springcloud.dao.DeptDao;
 import com.arch.springcloud.entities.Dept;

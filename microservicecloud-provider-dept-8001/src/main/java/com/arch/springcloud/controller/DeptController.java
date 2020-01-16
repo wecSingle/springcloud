@@ -1,4 +1,4 @@
-package com.arch.springcloud.com.arch.springcloud.controller;
+package com.arch.springcloud.controller;
 
 import com.arch.springcloud.entities.Dept;
 import com.arch.springcloud.service.DeptService;
